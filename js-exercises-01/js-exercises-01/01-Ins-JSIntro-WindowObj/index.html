@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to JavaScript</title>
+    <script>
+        // This is a single line comment in JavaScript
+
+        /* This is a
+            multi-line comment
+            in JavaScript
+        */
+
+        /*
+
+        JavaScript is a language used to make web pages interactive.
+        Javascript deals with the objects and events inside a web page.
+        Here, we are using the window object to display an alert.
+        The alert is a method (or "action") of the window object.
+
+        */
+
+        window.alert("Hello, World!");
+
+        /*
+            Here, we are using the window object to display a prompt.
+            The prompt is a method (or "action") of the window object.
+            We store the results of the prompt in a variable called "question".
+            A variable is a container for storing data values.
+        */
+
+        let question = window.prompt("What is your name?");
+
+        /*
+             Here, we are using the window object ask the user a yes/no question.
+             Confirm() is a method (or "action") of the window object.
+             We store the results of the prompt in a variable called "question02".
+             The variable stores a boolean value (true or false) based on the user
+             clicking "OK" (true) or "Cancel" (false).
+        */
+
+        let question02 = window.confirm("Are you sure?");
+
+        /*
+
+            Here, we introduce the concept of conditional statements.
+            A conditional statement is a set of rules performed if a certain condition is met.
+            If the user clicks "OK" in the confirm() prompt, the alert will display
+            "You are sure that your name is [question]!"
+            If the user clicks "Cancel" in the confirm() prompt, the alert will display
+            "You are not sure!"
+            This is because the confirm() method returns a boolean value (true or false).
+
+         */
+        if(question02===true){
+            window.alert("You are sure that your name is " + question + "!");
+        } else {
+            window.alert("You are not sure!");
+        }
+
+    </script>
+</head>
+<body>
+<h3 style="text-align: center">Look at this page's source code and look inside the &lt;script&gt; tags !</h3>
+</body>
+</html>
